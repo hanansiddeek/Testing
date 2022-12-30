@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> mark</title>
+</head>
+<body>
+
+	<form>
+		<label>Enter the Mark: </label>
+		<input type="text" name="mark" id='m' placeholder="Enter your marks here ">
+	</form>
+
+	<button id="abc" onclick="Decision()"> Decision </button>
+	
+	
+</body>
+</html>
+
+<script type="text/javascript">
+	function Decision() {
+		var x = document.getElementById('m').value
+
+		if(x <= 50 ){
+			var label = document.getElementById('m')
+			label.style.background = "RED"
+
+			document.getElementById('m').value = "Fail"
+
+		} 
+		else if (x > 50){
+			var label = document.getElementById ('m')
+			label.style.background = "blue"
+
+			document.getElementById('m').value = "Pass"		}
+		
+	}
+
+	
+
+
+</script>
